@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabric</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="top__navbar">
+          <div class="logo">
+            <a href="#"><img src="./assets/images/logo.png" alt="" /></a>
+          </div>
+
+          <a class="map" href="#"
+            ><img src="./assets/images/icon-location.png" alt="" />
+            <p>Санкт-Петербург</p></a
+          >
+
+          <form>
+            <input type="email" placeholder="Я ищу" />
+          </form>
+          <div class="navbar__contact">
+            <a href="tel: 8 800 900 70 90" class="navbar__tel"
+              >8 800 900 70 90</a
+            >
+            <p>Пн-вс: 10:00 - 21:00</p>
+          </div>
+          <div class="contact__icons">
+            <a href="#" class="like__icons"
+              ><img src="./assets/images/icon-heart-red.png" alt="sa"
+            /></a>
+            <a href="#" class="person__icons"
+              ><img src="./assets/images/icon-user.png" alt=""
+            /></a>
+            <a class="navbar__basket" href="#">
+              <img src="./assets/images/basket.png" alt="#" />
+              <p>12</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="navbar__bottom">
+      <div class="container">
+        <div class="navbar__bottom_list">
+          <ul class="bottom__nav">
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Для одежды</a>
+            </li>
+            <li class="bottom__item">
+              <a href="./product.html" class="bottom__link">Для интерьера</a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Мебельные</a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Фурнитура</a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Пряжа</a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Новогодние</a>
+            </li>
+            <li class="bottom__item">
+              <a href="#" class="bottom__link">Для шитья</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header section -->
+    <header class="mobile__headrer">
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#"><img src="./assets/images/logo.png" alt="" /></a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="#">Для одежды</a></li>
+            <li><a href="./product.html">Для интерьера</a></li>
+            <li><a href="#">Мебельные</a></li>
+            <li><a href="#">Фурнитура</a></li>
+            <li><a href="#">Пряжа </a></li>
+            <li><a href="#">Новогодние</a></li>
+            <li><a href="#">Для шитья</a></li>
+            <li>
+              <a class="map" href="#"
+                ><img src="./assets/images/icon-location.png" alt="" />
+                <p>Санкт-Петербург</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><form>
+                  <input type="email" placeholder="Я ищу" /></form
+              ></a>
+            </li>
+            <li><a href="tel: 8 800 900 70 90" class="navbar__tel"
+              >8 800 900 70 90</a</li>
+            <li>
+              <div class="contact__icons">
+              <a href="#" class="like__icons"
+                ><img src="./assets/images/icon-heart-red.png" alt="sa"
+              /></a>
+              <a href="#" class="person__icons"
+                ><img src="./assets/images/icon-user.png" alt=""
+              /></a>
+              <a class="navbar__basket" href="#">
+                <img src="./assets/images/basket.png" alt="#" />
+                <p>12</p>
+              </a>
+            </div></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- showcase section -->
+    <div class="showcase">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel showcase__carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner showcase__inner">
+          <div class="carousel-item showcase__item active">
+            <img
+              src="./assets/images/showcase.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption showcase__caption d-md-block">
+              <h5>Скидки 20% на новые ткани</h5>
+            </div>
+          </div>
+          <div class="carousel-item showcase__item">
+            <img
+              src="./assets/images/showcase.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption showcase__caption d-md-block">
+              <h5>Скидки 20% на новые ткани</h5>
+            </div>
+          </div>
+          <div class="carousel-item showcase__item">
+            <img
+              src="./assets/images/showcase.png"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption showcase__caption d-md-block">
+              <h5>Скидки 20% на новые ткани</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev showcase__prev__btn"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon showcase__prev__icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next showcase__next__btn"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon showcase__next__icon"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Card__inner -->
+    <section class="card__inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col0sm-12 card__col">
+            <div class="card__inner_card card">
+              <div class="card-body card__inner_body card__inner_body1">
+                <div class="card__inner_title">
+                  <h2>20%</h2>
+                  <p>на новые ткани</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 card__col">
+            <div class="card__inner_card card">
+              <div class="card-body card__inner_body card__inner_body2">
+                <div class="card__inner_title">
+                  <h2>15%</h2>
+                  <p>на ткани</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 card__col">
+            <div class="card__inner_card card">
+              <div class="card-body card__inner_body card__inner_body3">
+                <div class="card__inner_title">
+                  <h2>6%</h2>
+                  <p>8 марта на ткани</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories section -->
+    <div class="categories">
+      <div class="container">
+        <div class="categories__title">
+          <h1>Популярные категории</h1>
+        </div>
+        <div class="row">
+          <div
+            class="col-xl-8 col-md-6 col-sm-12 mt-3 categories__col categories__col1"
+          >
+            <div class="categories__card">
+              <p class="categories__card_info">Лен и полулен</p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-md-6 col-sm-12 mt-3 categories__col categories__col2"
+          >
+            <div class="categories__card">
+              <p class="categories__card_info">Хлопок</p>
+            </div>
+          </div>
+        </div>
+        <div class="row row2">
+          <div
+            class="col-xl-4 col-md-6 col-sm-12 mt-3 categories__col categories__col2"
+          >
+            <div class="categories__card">
+              <p class="categories__card_info">Хлопок</p>
+            </div>
+          </div>
+          <div
+            class="col-xl-8 col-md-6 col-sm-12 mt-3 categories__col categories__col1"
+          >
+            <div class="categories__card">
+              <p class="categories__card_info">Лен и полулен</p>
+            </div>
+          </div>
+        </div>
+        <div class="row row3">
+          <div
+            class="col-xl-4 col-md-6 col-sm-12 mt-3 categories__col categories__col1"
+          >
+            <div class="categories__card">
+              <p class="categories__card_info">Хлопок</p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-md-6 col-sm-12 mt-3 categories__col categories__col2"
+          >
+            <div class="categories__card">
+              <p class="categories__card_info">Лен и полулен</p>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-md-6 col-sm-12 mt-3 categories__col categories__col3"
+          >
+            <div class="categories__card">
+              <p class="categories__card_info">Лен и полулен --></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products mt-5">
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row products__row">
+                <div class="col-xl-4 col-md-6 col-sm-12 products__col">
+                  <div class="card">
+                    <div class="card-header text=center p-0 overflow-hidden">
+                      <img
+                        class="header__image"
+                        src="./assets/images/products1.png"
+                        alt=""
+                      />
+                      <div class="like">
+                        <img src="./assets/images/like.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a href="#">Рогожка</a>
+                      <h2>Альпийская деревенька</h2>
+                      <div class="products__info">
+                        <p class="info1">Ширина</p>
+                        <p class="info2">1.5 м</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Состав</p>
+                        <p class="info2">100%</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Плотность</p>
+                        <p class="info2">170 гр/м2</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="cost">
+                        <p class="cost1">240 ₽</p>
+                        <p class="cost2">360 ₽</p>
+                      </div>
+                      <a href="#">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 products__col">
+                  <div class="card">
+                    <div class="card-header text=center p-0 overflow-hidden">
+                      <img
+                        class="header__image"
+                        src="./assets/images/products2.png"
+                        alt=""
+                      />
+                      <div class="like">
+                        <img src="./assets/images/like.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a href="#">Рогожка</a>
+                      <h2>Альпийская деревенька</h2>
+                      <div class="products__info">
+                        <p class="info1">Ширина</p>
+                        <p class="info2">1.5 м</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Состав</p>
+                        <p class="info2">100%</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Плотность</p>
+                        <p class="info2">170 гр/м2</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="cost">
+                        <p class="cost1">240 ₽</p>
+                        <p class="cost2">360 ₽</p>
+                      </div>
+                      <a href="#">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 products__col">
+                  <div class="card">
+                    <div class="card-header text=center p-0 overflow-hidden">
+                      <img
+                        class="header__image"
+                        src="./assets/images/products3.png"
+                        alt=""
+                      />
+                      <div class="like">
+                        <img src="./assets/images/like.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a href="#">Рогожка</a>
+                      <h2>Альпийская деревенька</h2>
+                      <div class="products__info">
+                        <p class="info1">Ширина</p>
+                        <p class="info2">1.5 м</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Состав</p>
+                        <p class="info2">100%</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Плотность</p>
+                        <p class="info2">170 гр/м2</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="cost">
+                        <p class="cost1">240 ₽</p>
+                        <p class="cost2">360 ₽</p>
+                      </div>
+                      <a href="#">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row products__row">
+                <div class="col-xl-4 col-md-6 col-sm-12 products__col">
+                  <div class="card">
+                    <div class="card-header text=center p-0 overflow-hidden">
+                      <img
+                        class="header__image"
+                        src="./assets/images/products1.png"
+                        alt=""
+                      />
+                      <div class="like">
+                        <img src="./assets/images/like.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a href="#">Рогожка</a>
+                      <h2>Альпийская деревенька</h2>
+                      <div class="products__info">
+                        <p class="info1">Ширина</p>
+                        <p class="info2">1.5 м</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Состав</p>
+                        <p class="info2">100%</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Плотность</p>
+                        <p class="info2">170 гр/м2</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="cost">
+                        <p class="cost1">240 ₽</p>
+                        <p class="cost2">360 ₽</p>
+                      </div>
+                      <a href="#">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 products__col">
+                  <div class="card">
+                    <div class="card-header text=center p-0 overflow-hidden">
+                      <img
+                        class="header__image"
+                        src="./assets/images/products1.png"
+                        alt=""
+                      />
+                      <div class="like">
+                        <img src="./assets/images/like.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a href="#">Рогожка</a>
+                      <h2>Альпийская деревенька</h2>
+                      <div class="products__info">
+                        <p class="info1">Ширина</p>
+                        <p class="info2">1.5 м</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Состав</p>
+                        <p class="info2">100%</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Плотность</p>
+                        <p class="info2">170 гр/м2</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="cost">
+                        <p class="cost1">240 ₽</p>
+                        <p class="cost2">360 ₽</p>
+                      </div>
+                      <a href="#">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12 products__col">
+                  <div class="card">
+                    <div class="card-header text=center p-0 overflow-hidden">
+                      <img
+                        class="header__image"
+                        src="./assets/images/products1.png"
+                        alt=""
+                      />
+                      <div class="like">
+                        <img src="./assets/images/like.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a href="#">Рогожка</a>
+                      <h2>Альпийская деревенька</h2>
+                      <div class="products__info">
+                        <p class="info1">Ширина</p>
+                        <p class="info2">1.5 м</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Состав</p>
+                        <p class="info2">100%</p>
+                      </div>
+                      <div class="products__info">
+                        <p class="info1">Плотность</p>
+                        <p class="info2">170 гр/м2</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <div class="cost">
+                        <p class="cost1">240 ₽</p>
+                        <p class="cost2">360 ₽</p>
+                      </div>
+                      <a href="#">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a
+              class="left carousel-control"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- <div class="row products__row">
+          <div class="col-xl-4 products__col">
+            <div class="card">
+              <div class="card-header text=center p-0 overflow-hidden">
+                <img class="header__image" src="./assets/images/products1.png" alt="" />
+                <div class="like">
+                  <img src="./assets/images/like.png" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <a href="#">Рогожка</a>
+                <h2>Альпийская деревенька</h2>
+                <div class="products__info">
+                  <p class="info1">Ширина</p>
+                  <p class="info2">1.5 м</p>
+                </div>
+                <div class="products__info">
+                  <p class="info1">Состав</p>
+                  <p class="info2">100%</p>
+                </div>
+                <div class="products__info">
+                  <p class="info1">Плотность</p>
+                  <p class="info2">170 гр/м2</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="cost">
+                  <p class="cost1">240 ₽</p>
+                  <p class="cost2">360 ₽</p>
+                </div>
+                <a href="#">В корзину</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="adds">
+      <div class="container">
+        <div class="adds__sec">
+          <div class="row adds__row">
+            <div class="col-xl-4 adds__col1">
+              <h1>Подпишитесь  на рассылку</h1>
+              <p>Будьте в курсе наших акций</p>
+            </div>
+            <div class="col-xl-4 adds__col2">
+              <form>
+                <input type="email" placeholder="Ваша почта" />
+              </form>
+              <p>
+                Нажимая кнопку, вы даете согласие на обработку ваших
+                персональных  данных в соответствии с Политикой
+                Конфиденциальности
+              </p>
+            </div>
+            <div class="col-xl-4 adds__col3">
+              <div class="adds__btn">
+                <button>
+                  Подписаться <img src="./assets/images/line.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer__row">
+          <div class="col-xl-6 footer__col1">
+            <div class="row text-center">
+              <div class="col-xl-6 col-md-12 left__col">
+                <h2>Наши контакты</h2>
+                <a class="tel" href="tel: 8 800 900 70 90">8 800 900 70 90</a>
+                <p class="text1">г. Орск Проспект Ленина 71 / А</p>
+                <p class="text2">Пн-вс: 10:00 - 21:00 без выходных</p>
+                <div class="icons text-end">
+                  <a href="#"
+                    ><img src="./assets/images/instagram.png" alt="instagramm"
+                  /></a>
+                  <a href="#"><img src="./assets/images/vk.png" alt="vk" /></a>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 right__col">
+                <h2>Способы оплаты</h2>
+                <a href="#">
+                  <img src="./assets/images/Visa.png" alt="" />
+                  <img src="./assets/images/PayPal.png" alt="" />
+                  <img src="./assets/images/MasterCard.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d640.0992476035535!2d66.14779734273833!3d40.38148933301228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f53d51e6f73266f%3A0x70c5ac7bb671df2e!2z0J3Rg9GA0LDRgtC40L3RgdC60LjQuSDRgNCw0LnQvtC9!5e1!3m2!1sru!2s!4v1660212699875!5m2!1sru!2s"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      };
+      cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
